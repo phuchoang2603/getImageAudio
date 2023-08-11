@@ -3,3 +3,4 @@ json
 pandas
 openai
 google-cloud-storage
+configparser

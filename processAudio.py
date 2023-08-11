@@ -3,14 +3,21 @@ import json
 import pandas as pd
 from google.cloud import storage
 from unidecode import unidecode
+from configparser import ConfigParser
+
+config = ConfigParser()
+config.read('config.ini')
 
 # Set up the Viettel API key
-viettel_api_key = '78513ac98aba28746c6726732b0510b5'
+viettel_api_key = config['viettel-ai']['api_key']
 
 # Set up Google Cloud Storage bucket information
-bucket_name = 'global-vietnamese.appspot.com'
+bucket_name = config['google-cloud-storage']['bucket_name']
 
-# Upload a file to a Google Cloud Storage bucket
+# Set up csv input file path
+csv_input = config['csv']['input']
+
+# Function that uploads a file to a Google Cloud Storage bucket
 def upload_blob(bucket_name, source_file_name, destination_blob_name):
     storage_client = storage.Client()
     bucket = storage_client.bucket(bucket_name)
@@ -39,7 +46,7 @@ def generate_audio(word_vn):
     return response
 
 # Get the data from the CSV file
-df = pd.read_csv('cards.csv')
+df = pd.read_csv(csv_input)
 
 # Loop through each row in the DataFrame
 for index, row in df.iterrows():

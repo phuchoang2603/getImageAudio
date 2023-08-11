@@ -4,12 +4,19 @@ import time
 import pandas as pd
 from google.cloud import storage
 from unidecode import unidecode
+from configparser import ConfigParser
+
+config = ConfigParser()
+config.read('config.ini')
 
 # Set up your OpenAI API credentials
-openai.api_key = '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'
+openai.api_key = config['openai']['api_key']
 
 # Set up Google Cloud Storage bucket information
-bucket_name = 'global-vietnamese.appspot.com'
+bucket_name = config['google-cloud-storage']['bucket_name']
+
+# Set up csv output file path
+csv_output = config['csv']['output']
 
 # Upload a file to a Google Cloud Storage bucket
 def upload_blob(bucket_name, source_file_name, destination_blob_name):
@@ -35,7 +42,7 @@ def generate_image(word_en):
 
     return image_url
 
-# Read the CSV file
+# Read the audio CSV file
 df = pd.read_csv('audio.csv')
 
 for index, row in df.iterrows():
@@ -65,4 +72,4 @@ for index, row in df.iterrows():
     time.sleep(5)
 
 # Save the updated CSV file
-df.to_csv('final.csv', index=False)
+df.to_csv(csv_output, index=False)
