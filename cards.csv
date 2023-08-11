@@ -20,7 +20,7 @@ Ba ba,Turtle,Tortue (Trionyx),B,,,FALSE,2023-08-12 00:00:00,1
 Cào cào,Cricket,Criquet,C,,,FALSE,2023-08-12 00:00:00,1
 Cua,Crab,Crabe,C,,,FALSE,2023-08-12 00:00:00,1
 Cá heo mỏ,Dolphin,Dauphin,C,,,FALSE,2023-08-12 00:00:00,1
-Cá nhà táng,Sperm Whale,Cachalot,C,,,FALSE,2023-08-12 00:00:00,1
+Cá nhà táng,Sperm-Whale,Cachalot,C,,,FALSE,2023-08-12 00:00:00,1
 Cá ông,Whale,Baleine,C,,,FALSE,2023-08-12 00:00:00,1
 Cáo,Fox,Renard,C,,,FALSE,2023-08-12 00:00:00,1
 Cừu,Sheep,Mouton,C,,,FALSE,2023-08-12 00:00:00,1
@@ -35,15 +35,15 @@ Châu chấu,Grasshopper,Sauterelle,C,,,FALSE,2023-08-12 00:00:00,1
 Chuồn chuồn,Dragonfly,Libellule,C,,,FALSE,2023-08-12 00:00:00,1
 Chó,Dog,Chien,C,,,FALSE,2023-08-12 00:00:00,1
 Chuột,Rat,Rat,C,,,FALSE,2023-08-12 00:00:00,1
-Chuột nhắt,House Mouse,Souris,C,,,FALSE,2023-08-12 00:00:00,1
-Chuột lang,Guinea pig,cobaye,C,,,FALSE,2023-08-12 00:00:00,1
+Chuột nhắt,House-Mouse,Souris,C,,,FALSE,2023-08-12 00:00:00,1
+Chuột lang,Guinea-pig,cobaye,C,,,FALSE,2023-08-12 00:00:00,1
 Chuột đồng,Vole,Campagnol,C,,,FALSE,2023-08-12 00:00:00,1
 Chuột bạch,Hamster,cobaye,C,,,FALSE,2023-08-12 00:00:00,1
 Chuột chũi,Mole,Taupe,C,,,FALSE,2023-08-12 00:00:00,1
 Chim bồ câu trắng,Dove,Colombe,C,,,FALSE,2023-08-12 00:00:00,1
-(cá) Chép,Common carp,carpe,C,,,FALSE,2023-08-12 00:00:00,1
-Dế mèn,True Cricket,Grillon,D,,,FALSE,2023-08-12 00:00:00,1
-Dã tràng,Sand Crab,Crabe des sables,D,,,FALSE,2023-08-12 00:00:00,1
+(cá) Chép,Common-carp,carpe,C,,,FALSE,2023-08-12 00:00:00,1
+Dế mèn,True-Cricket,Grillon,D,,,FALSE,2023-08-12 00:00:00,1
+Dã tràng,Sand-Crab,Crabe des sables,D,,,FALSE,2023-08-12 00:00:00,1
 Dê,Goat,Chèvre,D,,,FALSE,2023-08-12 00:00:00,1
 Dơi,Bat,Chauve- souris,D,,,FALSE,2023-08-12 00:00:00,1
 Diều hâu,Hawk,Milan,D,,,FALSE,2023-08-12 00:00:00,1
@@ -71,21 +71,21 @@ Hải âu,Seagulls,Mouette,H,,,FALSE,2023-08-12 00:00:00,1
 Hoàng yến,Canary,Canari,H,,,FALSE,2023-08-12 00:00:00,1
 (cá) hồi,Salmon,saumon,H,,,FALSE,2023-08-12 00:00:00,1
 (cá) hồi sông,Salmon,truite,H,,,FALSE,2023-08-12 00:00:00,1
-(lợn) ỉ,Pot-bellied pig,cochon ventru,I,,,FALSE,2023-08-12 00:00:00,1
+(lợn) ỉ,Pot-bellied-pig,cochon ventru,I,,,FALSE,2023-08-12 00:00:00,1
 Kiến,Ant,Fourmi,K,,,FALSE,2023-08-12 00:00:00,1
 Khỉ,Monkey,Singe,K,,,FALSE,2023-08-12 00:00:00,1
 Kì lân,Unicorn,Licorne,K,,,FALSE,2023-08-12 00:00:00,1
 Kền kền,Vulture,Vautour,K,,,FALSE,2023-08-12 00:00:00,1
 Kì lân biển,Narwhal,Narval,K,,,FALSE,2023-08-12 00:00:00,1
 (cá) Kiếm,Swordfish,espadon,K,,,FALSE,2023-08-12 00:00:00,1
-Kì nhông,Marine iguana,Salamandre,K,,,FALSE,2023-08-12 00:00:00,1
+Kì nhông,Marine-iguana,Salamandre,K,,,FALSE,2023-08-12 00:00:00,1
 Kỳ đà ,Iguana,varan,K,,,FALSE,2023-08-12 00:00:00,1
 Lạc đà,Camel,Chameau,L,,,FALSE,2023-08-12 00:00:00,1
 Lạc đà 2 buớu,Bactrian,Dromadaire,L,,,FALSE,2023-08-12 00:00:00,1
 Lạc đà không bướu,Llama,Lama,L,,,FALSE,2023-08-12 00:00:00,1
 Lợn,Pig,Cochon,L,,,FALSE,2023-08-12 00:00:00,1
-Lợn rừng,Wild boar,Sanglier,L,,,FALSE,2023-08-12 00:00:00,1
-Lợn rừng con,Baby wild boar ,marcassin,L,,,FALSE,2023-08-12 00:00:00,1
+Lợn rừng,Wild-boar,Sanglier,L,,,FALSE,2023-08-12 00:00:00,1
+Lợn rừng con,Baby-wild-boar-,marcassin,L,,,FALSE,2023-08-12 00:00:00,1
 Lừa,Donkey,Âne,L,,,FALSE,2023-08-12 00:00:00,1
 Lươn,Eel,Anguille,L,,,FALSE,2023-08-12 00:00:00,1
 Muỗi,Mosquito,Moustique,M,,,FALSE,2023-08-12 00:00:00,1
@@ -103,42 +103,41 @@ Nhện,Spider,araignée,N,,,FALSE,2023-08-12 00:00:00,1
 Nhím,Hedgehog,hérisson,N,,,FALSE,2023-08-12 00:00:00,1
 Nhạn,Swallow,hirondelle,N,,,FALSE,2023-08-12 00:00:00,1
 (cá) Nheo,siluridae, poisson chat,N,,,FALSE,2023-08-12 00:00:00,1
-Nhái,Tree frog,rainette,N,,,FALSE,2023-08-12 00:00:00,1
-Nhông (rồng đất),Physignathus cocincinus,Dragon d’eau vert/iguane,N,,,FALSE,2023-08-12 00:00:00,1
+Nhái,Tree-frog,rainette,N,,,FALSE,2023-08-12 00:00:00,1
+Nhông (rồng đất),Physignathus-cocincinus,Dragon d’eau vert\iguane,N,,,FALSE,2023-08-12 00:00:00,1
 Ngao,clam,clams,N,,,FALSE,2023-08-12 00:00:00,1
-Nghêu (Nghêu dầu),Asiatic hard clam,meretrix,N,,,FALSE,2023-08-12 00:00:00,1
+Nghêu (Nghêu dầu),Asiatic-hard-clam,meretrix,N,,,FALSE,2023-08-12 00:00:00,1
 Nghé,Calf,Bufflon,N,,,FALSE,2023-08-12 00:00:00,1
-(cá) Ngự thon,,thon,N,,,FALSE,2023-08-12 00:00:00,1
 Ong,Bee,Abeille,O,,,FALSE,2023-08-12 00:00:00,1
-Ong bầu,Carpenter bee,Frelon,O,,,FALSE,2023-08-12 00:00:00,1
+Ong bầu,Carpenter-bee,Frelon,O,,,FALSE,2023-08-12 00:00:00,1
 Ong đực,Drone,Bourdon,O,,,FALSE,2023-08-12 00:00:00,1
-Ong chúa,Queen bee,Abeille reine,O,,,FALSE,2023-08-12 00:00:00,1
-Ong thợ,Worker bee,Abeille ouvrière,O,,,FALSE,2023-08-12 00:00:00,1
+Ong chúa,Queen-bee,Abeille reine,O,,,FALSE,2023-08-12 00:00:00,1
+Ong thợ,Worker-bee,Abeille ouvrière,O,,,FALSE,2023-08-12 00:00:00,1
 Ong vò vẽ,Hornet,Guêpe,O,,,FALSE,2023-08-12 00:00:00,1
 Oanh (con chim vàng anh),oriole,loriot,O,,,FALSE,2023-08-12 00:00:00,1
-Ó (chim ó biển),falcon,Orfraie/pygargue,O,,,FALSE,2023-08-12 00:00:00,1
-Ốc mượn hồn,Hermit crab,Bernard l'ermite,Ô,,,FALSE,2023-08-12 00:00:00,1
-Ốc sên,Land snail,escargot,Ô,,,FALSE,2023-08-12 00:00:00,1
-Ốc móng tay,Razor clam,,Ô,,,FALSE,2023-08-12 00:00:00,1
+Ó (chim ó biển),falcon,Orfraie\pygargue,O,,,FALSE,2023-08-12 00:00:00,1
+Ốc mượn hồn,Hermit-crab,Bernard l'ermite,Ô,,,FALSE,2023-08-12 00:00:00,1
+Ốc sên,Land-snail,escargot,Ô,,,FALSE,2023-08-12 00:00:00,1
+Ốc móng tay,Razor-clam,,Ô,,,FALSE,2023-08-12 00:00:00,1
 Phượng hoàng,Phoenix,Phénix,P,,,FALSE,2023-08-12 00:00:00,1
 Phường chèo,Cuckooshrikes,minivet,P,,,FALSE,2023-08-12 00:00:00,1
 Quạ,Crow,Corbeau,Q,,,FALSE,2023-08-12 00:00:00,1
 Quái vật,monster,monstre,Q,,,FALSE,2023-08-12 00:00:00,1
 (cá) Quận chúa,Pufferfish,Holocanthe,Q,,,FALSE,2023-08-12 00:00:00,1
 Ruồi,Fly,Mouche,R,,,FALSE,2023-08-12 00:00:00,1
-Rái cá,Beaver/Otter,Loutre,R,,,FALSE,2023-08-12 00:00:00,1
+Rái cá,Beaver_Otter,Loutre,R,,,FALSE,2023-08-12 00:00:00,1
 (cá) Rô,tilapia,anabas,R,,,FALSE,2023-08-12 00:00:00,1
 Rồng,Dragon,Dragon,R,,,FALSE,2023-08-12 00:00:00,1
 Rùa,Turtle,Tortue,R,,,FALSE,2023-08-12 00:00:00,1
-Rắn thuỷ tinh (một loại thằn lằn),glass lizard,Orvet,R,,,FALSE,2023-08-12 00:00:00,1
+Rắn thuỷ tinh (một loại thằn lằn),glass-lizard,Orvet,R,,,FALSE,2023-08-12 00:00:00,1
 Rắn Vipe,viper,ripère,R,,,FALSE,2023-08-12 00:00:00,1
 Rắn ráo nước,water-snake,Couleuvre,R,,,FALSE,2023-08-12 00:00:00,1
 Sâu,Worm,Chenille,S,,,FALSE,2023-08-12 00:00:00,1
 Sên,Snail,limace,S,,,FALSE,2023-08-12 00:00:00,1
-Sò cát,Ark clam,praire,S,,,FALSE,2023-08-12 00:00:00,1
+Sò cát,Ark-clam,praire,S,,,FALSE,2023-08-12 00:00:00,1
 Sư tử,Lion,Lion,S,,,FALSE,2023-08-12 00:00:00,1
 Sóc,Squirrel,écureuil,S,,,FALSE,2023-08-12 00:00:00,1
-Sáo sậu,Black collared snarling,Etourneau,S,,,FALSE,2023-08-12 00:00:00,1
+Sáo sậu,Black-collared-snarling,Etourneau,S,,,FALSE,2023-08-12 00:00:00,1
 Sếu,Cranes,Grue,S,,,FALSE,2023-08-12 00:00:00,1
 Sơn ca,Nightingale,alouette des champs,S,,,FALSE,2023-08-12 00:00:00,1
 Sa giông (cá cóc),newt,triton,S,,,FALSE,2023-08-12 00:00:00,1
@@ -158,12 +157,12 @@ Uyên Ương,Lovebirds,Canard et cane mandarin,U,,,FALSE,2023-08-12 00:00:00,1
 Ưng,Accipitriformes,Epervier,Ư,,,FALSE,2023-08-12 00:00:00,1
 Ve,Cicada,Cigale,V,,,FALSE,2023-08-12 00:00:00,1
 Voi,Elephant,Eléphant,V,,,FALSE,2023-08-12 00:00:00,1
-Vượn,Ape/Gibbon,Gibbon,V,,,FALSE,2023-08-12 00:00:00,1
+Vượn,Ape_Gibbon,Gibbon,V,,,FALSE,2023-08-12 00:00:00,1
 Vẹt,Parrot,Perroquet,V,,,FALSE,2023-08-12 00:00:00,1
 Vịt,Duck,Canard,V,,,FALSE,2023-08-12 00:00:00,1
-Xén tóc,Longhorn beetles/ Cerambycidae,Capricorne/ Cérambyx,X,,,FALSE,2023-08-12 00:00:00,1
+Xén tóc,Longhorn-beetles_Cerambycidae,Capricorne\ Cérambyx,X,,,FALSE,2023-08-12 00:00:00,1
 Xuyên sơn (tê tê),Pangolin,Pangolin,X,,,FALSE,2023-08-12 00:00:00,1
-Xít,Purple Swamphen/ Porphyrio,Talève sultane,X,,,FALSE,2023-08-12 00:00:00,1
+Xít,Purple-Swamphen_Porphyrio,Talève sultane,X,,,FALSE,2023-08-12 00:00:00,1
 Xác đin,sardine,sardine,X,,,FALSE,2023-08-12 00:00:00,1
-(Chim) Yến,Salangane/Swiftlet,Salangane,Y,,,FALSE,2023-08-12 00:00:00,1
-(Chim) Yểng,Common hill myna,Mainate,Y,,,FALSE,2023-08-12 00:00:00,1
+(Chim) Yến,Salangane_Swiftlet,Salangane,Y,,,FALSE,2023-08-12 00:00:00,1
+(Chim) Yểng,Common-hill-myna,Mainate,Y,,,FALSE,2023-08-12 00:00:00,1

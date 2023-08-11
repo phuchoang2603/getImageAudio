@@ -1,0 +1,8 @@
+# Ignore audio files
+audio/*
+
+# Ignore image files
+image/*
+
+# Ignore .csv files
+*.csv
