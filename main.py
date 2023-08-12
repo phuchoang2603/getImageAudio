@@ -1,6 +1,7 @@
 import openai
 import requests
 import json
+import time
 import pandas as pd
 from google.cloud import storage
 from unidecode import unidecode
@@ -46,7 +47,7 @@ def generate_audio(word_vn):
 
 # Function that generates the image for a given English word
 def generate_image(word_en):
-    prompt = f"an illustration of {word_en}"
+    prompt = f"{word_en}, digital art, brown background"
 
     response = openai.Image.create(
         prompt=prompt,
@@ -79,7 +80,7 @@ def main():
     for index, row in df.iterrows():
         word_vn = row['word_vn']
         word_en = row['word_en']
-        file_name = unidecode(word_vn).lower().replace(' ', '-').replace('/', '-') + '.' + word_en.lower()
+        file_name = unidecode(word_vn).lower().replace(' ', '-').replace('/', '-') + '(or)' + word_en.lower()
         
         try:
             # Generate the audio file for the Vietnamese word
@@ -124,9 +125,14 @@ def main():
         except Exception as e:
             logging.error(f"Error processing word '{word_en}': {e}")
 
+        # Delay for 5 seconds to avoid hitting the OpenAI API rate limit
+        logging.info("Waiting 5 seconds to avoid hitting the OpenAI API rate limit...")
+        time.sleep(5)
+
     # Save the updated DataFrame back to the CSV file
     df.to_csv(csv_output, index=False)
     logging.info(f"Saved updated DataFrame to {csv_output}.")
+
 
 # Run the main program
 if __name__ == "__main__":
