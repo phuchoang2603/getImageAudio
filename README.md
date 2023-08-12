@@ -6,7 +6,7 @@ This project generates images based on text prompts using the OpenAI API and con
 
 - Python 3 installed on your machine
 - OpenAI Python library (`openai`) installed (`pip install openai`)
-- Google Cloud Storage Python library (`google-cloud-storage`) installed (`pip install google-cloud-storage`)
+- Google Cloud Storage Python library (`google-cloud-storage`) installed (`pip install google-cloud-storage`) and configured (see [Setup](https://cloud.google.com/docs/authentication/provide-credentials-adc#local-dev))
 
 ## Setup
 

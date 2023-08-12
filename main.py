@@ -46,7 +46,7 @@ def generate_audio(word_vn):
 
 # Function that generates the image for a given English word
 def generate_image(word_en):
-    prompt = f"an illustration of {word_en}"
+    prompt = f"{word_en}, digital art, brown background"
 
     response = openai.Image.create(
         prompt=prompt,
@@ -79,7 +79,7 @@ def main():
     for index, row in df.iterrows():
         word_vn = row['word_vn']
         word_en = row['word_en']
-        file_name = unidecode(word_vn).lower().replace(' ', '-').replace('/', '-') + '.' + word_en.lower()
+        file_name = unidecode(word_vn).lower().replace(' ', '-').replace('/', '-') + '_or_' + word_en.lower()
         
         try:
             # Generate the audio file for the Vietnamese word
