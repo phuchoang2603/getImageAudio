@@ -38,18 +38,16 @@ This project generates images based on text prompts using the OpenAI API and con
 
 2. Run the Python script for image generation:
    ```
-   python processImg.py
+   python main.py
    ```
 
-   This script will read the data from the CSV file specified in the `config.ini` file, generate images for the English words using the OpenAI API, and upload the images to Google Cloud Storage. The generated image URLs will be added back to the CSV file in the `image_url` column.
+   This script will 
+   - read the data from the CSV file specified in the `config.ini` file (e.g., `cards.csv`)
+   - convert the English words to speech using the ViettelAI API, and save the audio files locally.
+   - generate images for the English words using the OpenAI API, and save the images locally.
+   - upload the audio and image files to Google Cloud Storage.
+   - update the CSV file with the URLs of the generated images and the paths to the converted audio files.
 
-3. Run the Python script for text to speech conversion:
-   ```
-   python processAudio.py
-   ```
-
-   This script will read the data from the CSV file specified in the `config.ini` file, convert the English words to speech using the ViettelAI API, and save the audio files locally. The audio file paths will be added back to the CSV file in the `audio_file` column.
-
-4. Check the updated CSV file:
-   - After running both scripts, open the output CSV file specified in the `config.ini` file (e.g., `final.csv`) to see the updated information.
+3. Check the updated CSV file:
+   - After running the script, open the output CSV file specified in the `config.ini` file (e.g., `final.csv`) to see the updated information.
    - The `image_url` column will contain the URLs of the generated images, and the `audio_file` column will contain the paths to the converted audio files.

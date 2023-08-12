@@ -1,6 +1,8 @@
+openai
 requests
 json
 pandas
-openai
 google-cloud-storage
+unidecode
 configparser
+logging
