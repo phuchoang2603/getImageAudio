@@ -80,7 +80,7 @@ def main():
     for index, row in df.iterrows():
         word_vn = row['word_vn']
         word_en = row['word_en']
-        file_name = unidecode(word_vn).lower().replace(' ', '-').replace('/', '-') + '(or)' + word_en.lower()
+        file_name = unidecode(word_vn).lower().replace(' ', '-').replace('/', '-') + '.' + word_en.lower()
         
         try:
             # Generate the audio file for the Vietnamese word
