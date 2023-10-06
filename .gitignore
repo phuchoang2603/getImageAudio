@@ -4,5 +4,9 @@ audio/*
 # Ignore image files
 image/*
 
-# Ignore .csv files
+# Ignore .csv and .xlsx files in both root and subdirectories
 *.csv
+*.xlsx
+
+# Ignore .venv
+.venv

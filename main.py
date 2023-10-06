@@ -62,7 +62,7 @@ def generate_image(word_en):
 # Main program
 def main():
     # Set up your OpenAI API credentials
-    openai.api_key = config.get('open-ai', 'api_key')
+    # openai.api_key = config.get('open-ai', 'api_key')
 
     # Set up Google Cloud Storage bucket information
     bucket_name = config.get('google-cloud-storage', 'bucket_name')
@@ -80,14 +80,13 @@ def main():
     for index, row in df.iterrows():
         word_vn = row['word_vn']
         word_en = row['word_en']
-        file_name = unidecode(word_vn).lower().replace(' ', '-').replace('/', '-') + '.' + word_en.lower()
+        file_name = word_en
         
         try:
             # Generate the audio file for the Vietnamese word
             audio_response = generate_audio(word_vn)
             if audio_response.status_code == 200:
-                audio_filename = f"{file_name}.wav"
-                audio_path = os.path.join('audio', audio_filename)
+                audio_path = os.path.join('audio', f"{file_name}.wav")
                 with open(audio_path, 'wb') as f:
                     f.write(audio_response.content)
                 logging.info(f"Saved audio for '{word_en}' as {audio_path}")
@@ -95,39 +94,42 @@ def main():
                 logging.error(f"Failed to generate audio for '{word_en}'. Status code: {audio_response.status_code}")
 
             # Generate the image for the English word
-            image_url = generate_image(word_en)
-            logging.info(f"Generated image for '{word_en}': {image_url}")
-            image_filename = f"{file_name}.png"
-            image_path = os.path.join('image', image_filename)
-            image_response = requests.get(image_url)
-            if image_response.status_code == 200:
-                with open(image_path, 'wb') as f:
-                    f.write(image_response.content)
-                logging.info(f"Saved image for '{word_en}' as {image_path}")
-            else:
-                logging.error(f"Failed to generate image for '{word_en}'. Status code: {image_response.status_code}")
+            # image_url = generate_image(word_en)
+            # logging.info(f"Generated image for '{word_en}': {image_url}")
+            # image_filename = f"{file_name}.png"
+            # image_path = os.path.join('image', image_filename)
+            # image_response = requests.get(image_url)
+            # if image_response.status_code == 200:
+            #     with open(image_path, 'wb') as f:
+            #         f.write(image_response.content)
+            #     logging.info(f"Saved image for '{word_en}' as {image_path}")
+            # else:
+            #     logging.error(f"Failed to generate image for '{word_en}'. Status code: {image_response.status_code}")
 
             # Upload the audio file to Google Cloud Storage
-            upload_blob(bucket_name, audio_path, 'audio/' + audio_filename)
+            upload_blob(bucket_name, audio_path, 'audio/' + file_name)
             logging.info(f"Uploaded audio for '{word_en}' to Google Cloud Storage.")
 
             # Upload the image to Google Cloud Storage
-            upload_blob(bucket_name, image_path, 'image/' + image_filename)
+            image_path = os.path.join('image', f"{file_name}.jpg")
+            upload_blob(bucket_name, image_path, 'image/' + file_name)
             logging.info(f"Uploaded image for '{word_en}' to Google Cloud Storage.")
 
             # Get the audio URL and image_url from the response and update the "pronunciation" and "image" column in the CSV file respectively
-            audio_url = f"https://storage.googleapis.com/{bucket_name}/audio/{audio_filename}"
-            image_url = f"https://storage.googleapis.com/{bucket_name}/image/{image_filename}"
+            audio_url = f"https://storage.googleapis.com/{bucket_name}/audio/{file_name}"
+            image_url = f"https://storage.googleapis.com/{bucket_name}/image/{file_name}"
             df.at[index, 'pronunciation'] = audio_url
             df.at[index, 'image'] = image_url
 
-            logging.info(f"Updated audio and image URL for '{word_en}' to {audio_url} and to {image_url}")
+            # Logging the urls for images and audio
+            logging.info(f"Audio URL: {audio_url}")
+            logging.info(f"Image URL: {image_url}")            
         except Exception as e:
             logging.error(f"Error processing word '{word_en}': {e}")
 
         # Delay for 5 seconds to avoid hitting the OpenAI API rate limit
-        logging.info("Waiting 5 seconds to avoid hitting the OpenAI API rate limit...")
-        time.sleep(5)
+        # logging.info("Waiting 5 seconds to avoid hitting the OpenAI API rate limit...")
+        # time.sleep(5)
 
     # Save the updated DataFrame back to the CSV file
     df.to_csv(csv_output, index=False)
